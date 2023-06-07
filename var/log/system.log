@@ -18182,3 +18182,14 @@ Stack trace:
 #19 /var/www/html/magento2/vendor/magento/framework/App/Bootstrap.php(264): Magento\MediaStorage\App\Media->launch()
 #20 /var/www/html/magento2/pub/get.php(104): Magento\Framework\App\Bootstrap->run()
 #21 {main} [] []
+[2023-06-07T14:52:43.063462+00:00] main.ERROR: There are no commands defined in the "deploy:mot" namespace.
+
+Did you mean one of these?
+    deploy
+    deploy:mode
+#0 /var/www/html/magento2/vendor/symfony/console/Application.php(659): Symfony\Component\Console\Application->findNamespace()
+#1 /var/www/html/magento2/vendor/symfony/console/Application.php(237): Symfony\Component\Console\Application->find()
+#2 /var/www/html/magento2/vendor/magento/framework/Console/Cli.php(116): Symfony\Component\Console\Application->doRun()
+#3 /var/www/html/magento2/vendor/symfony/console/Application.php(149): Magento\Framework\Console\Cli->doRun()
+#4 /var/www/html/magento2/bin/magento(23): Symfony\Component\Console\Application->run()
+#5 {main} [] []
